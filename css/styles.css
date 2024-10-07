@@ -80,7 +80,13 @@ body {
   padding: 50px;
   display: flex;
   flex-direction: column;
+  position: relative;
   gap: 30px;
+}
+.services-section .images {
+  position: absolute;
+  top: 0;
+  right: -100px;
 }
 .services-section .category {
   text-transform: uppercase;
@@ -202,6 +208,7 @@ body {
 }
 
 .booking-section {
+  padding-top: 100px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -297,6 +304,10 @@ body {
   background: rgb(245, 245, 245);
 }
 .booking-section .trip-card .ongoing-card {
+  display: flex;
+  gap: 20px;
+  align-items: start;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
   position: absolute;
   padding: 20px;
   right: -100px;
@@ -305,6 +316,296 @@ body {
   height: 129px;
   border-radius: 18px;
   background: rgb(255, 255, 255);
+}
+.booking-section .trip-card .ongoing-card .ongoing-img {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.booking-section .trip-card .ongoing-card .ongoing-img p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.43px;
+  letter-spacing: -0.035em;
+  text-align: left;
+  color: rgb(132, 130, 154);
+}
+.booking-section .trip-card .ongoing-card .ongoing-img p span {
+  color: rgb(138, 121, 223);
+}
+
+.testimonial {
+  padding-top: 100px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.testimonial-tex {
+  max-width: 410px;
+}
+.testimonial-tex p {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  text-align: left;
+  color: rgb(94, 98, 130);
+  text-transform: uppercase;
+}
+.testimonial-tex h2 {
+  font-family: Volkhov;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 64.5px;
+  text-align: left;
+  color: #181e4b;
+}
+
+.testimonial-card {
+  position: relative;
+  width: 669px;
+  height: 356px;
+}
+.testimonial-card img {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  left: 0;
+}
+.testimonial-card .card-content {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  display: flex;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+  flex-direction: column;
+  justify-content: space-between;
+  width: 504px;
+  height: 245px;
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  padding: 34px;
+}
+.testimonial-card .card-content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  color: rgb(94, 98, 130);
+}
+.testimonial-card .card-content .tex span {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  color: rgb(94, 98, 130);
+  text-align: left;
+}
+.testimonial-card .card-content2 {
+  position: absolute;
+  top: 100px;
+  z-index: -1;
+  left: 100px;
+  display: flex;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+  flex-direction: column;
+  justify-content: space-between;
+  width: 504px;
+  height: 245px;
+  border-radius: 10px;
+  background: rgb(235, 233, 233);
+  padding: 34px;
+}
+.testimonial-card .card-content2 p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  color: rgb(94, 98, 130);
+}
+.testimonial-card .card-content2 .tex span {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  color: rgb(94, 98, 130);
+  text-align: left;
+}
+
+.company {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.company img:hover {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.subscribe-section {
+  width: 1170px;
+  height: 407px;
+  border-radius: 129px 20px 20px 20px;
+  background-color: #f5e9fd;
+  padding: 40px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.subscribe-section .subscribe-content h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 600;
+  color: rgb(20, 24, 62);
+  margin-bottom: 60px;
+  max-width: 880px;
+}
+.subscribe-section .subscribe-content .subscribe-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subscribe-section .subscribe-content .subscribe-form .input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.subscribe-section .subscribe-content .subscribe-form .input-container input {
+  width: 421px;
+  height: 68px;
+  border: none;
+  padding: 15px 20px;
+  font-size: 1rem;
+  outline: none;
+  flex: 1;
+  border-radius: 10px;
+  color: #555;
+}
+.subscribe-section .subscribe-content .subscribe-form .input-container input::-moz-placeholder {
+  color: #aaa;
+}
+.subscribe-section .subscribe-content .subscribe-form .input-container input::placeholder {
+  color: #aaa;
+}
+.subscribe-section .subscribe-content .subscribe-form .input-container button {
+  background-color: #ff775b;
+  color: white;
+  padding: 15px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.subscribe-section .subscribe-content .subscribe-form .input-container button:hover {
+  background-color: #ff5733;
+}
+.subscribe-section .subscribe-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #181e4b;
+}
+.subscribe-section .subscribe-icon img {
+  width: 30px;
+  height: auto;
+}
+
+.footer {
+  margin-top: 100px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.footer .footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.footer .footer-content .footer-column {
+  flex: 1;
+  min-width: 150px;
+  margin: 20px;
+  text-align: left;
+}
+.footer .footer-content .footer-column h2.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(24, 30, 75);
+}
+.footer .footer-content .footer-column p.tagline {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 10px;
+}
+.footer .footer-content .footer-column h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+.footer .footer-content .footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+.footer .footer-content .footer-column ul li {
+  margin-bottom: 10px;
+}
+.footer .footer-content .footer-column ul li a {
+  text-decoration: none;
+  color: #555;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+.footer .footer-content .footer-column ul li a:hover {
+  color: #ff775b;
+}
+.footer .footer-content .footer-column .social-media {
+  display: flex;
+  gap: 10px;
+}
+.footer .footer-content .footer-column .social-media a img {
+  width: 50px;
+  height: auto;
+}
+.footer .footer-content .footer-column .app-links {
+  width: 300px;
+}
+.footer .footer-content .footer-column .app-links p {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  color: #333;
+}
+.footer .footer-content .footer-column .app-links a img {
+  width: 120px;
+  margin: 5px 0;
+}
+.footer .footer-bottom {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 10px;
+}
+.footer .footer-bottom p {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.absalyute {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: -1;
 }
 
 header {
